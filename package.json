@@ -1,0 +1,32 @@
+{
+  "name": "my-gatsby-lib",
+  "version": "0.6.0",
+  "description": "Library of useful React components for Gatsby",
+  "main": "dist/index.min.js",
+  "scripts": {
+    "build": "rollup -c",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "prepare": "npm run build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/marcebdev/my-gatsby-lib.git"
+  },
+  "author": "Marcello Barbieri",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/marcebdev/my-gatsby-lib/issues"
+  },
+  "homepage": "https://github.com/marcebdev/my-gatsby-lib#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.4.4",
+    "@babel/preset-env": "^7.4.4",
+    "@babel/preset-react": "^7.0.0",
+    "rollup": "^1.10.1",
+    "rollup-plugin-babel": "^4.3.2",
+    "rollup-plugin-postcss": "^2.0.3",
+    "rollup-plugin-terser": "^4.0.4",
+    "stylus": "^0.54.5"
+  }
+}

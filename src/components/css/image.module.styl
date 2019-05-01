@@ -1,0 +1,78 @@
+.wrapper
+  height 100%
+  max-height 100%
+
+  //make this a mixin of clear-img?
+  img
+    margin 0
+    vertical-align bottom
+    transition opacity 200ms ease !important
+
+.mask:hover
+  picture
+    img
+      opacity 0.3 !important
+
+.overlayWrapper
+  position relative
+
+.overlayWrapper:hover
+  .hidden
+    opacity 1
+
+.hidden
+  opacity 0
+
+.overlaid
+  position absolute
+  width 90% //spacing on sides
+  color #ecf0f1
+  transition opacity 400ms ease
+
+
+//overlay positions
+//transform translate(x,y)
+.topLeft
+  left 10%
+  top 5%
+  transform translate(-45%, -95%)
+
+.topCenter
+  left 50%
+  top 8%
+  transform translate(-50%, -92%)
+
+.topRight
+  left 80%
+  top 5%
+  transform translate(-45%, -95%)
+
+.centerLeft
+  left 10%
+  top 50%
+  transform translate(-45%, -50%)
+
+.centerCenter
+  left 50%
+  top 50%
+  transform translate(-50%, -50%)
+
+.centerRight
+  left 80%
+  top 50%
+  transform translate(-45%, -50%)
+
+.bottomLeft
+  left 10%
+  top 88%
+  transform translate(-45%, -12%)
+
+.bottomCenter
+  left 50%
+  top 88%
+  transform translate(-50%, -12%)
+
+.bottomRight
+  left 80%
+  top 88%
+  transform translate(-45%, -12%)
